@@ -1,0 +1,402 @@
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+/* CABECERA */
+.center-header {
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+.header{
+    background-color: #37BBED;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    margin-bottom: 10px;
+    border-bottom: #ffffff 2px solid;
+}
+.header-con-navbar{
+    background-color: #37BBED;
+    width: 100%;
+    overflow: hidden;
+}
+.logo {
+    float: left;
+    line-height: 100px;
+}
+.logo a {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.search {
+    float: right;
+    width: 100%;
+    line-height: 100px;
+    border: 3px solid transparent;
+    border-radius: 30px;
+    inline-size: auto;
+}
+.search input{
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    border-width: 1px;
+    padding-left: 10px;
+}
+.button {
+    background-color: #0072bb;
+    color: #ffffff;
+    border-style: none;
+    border-radius: 50%;
+    inline-size: auto;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* NAV BAR */
+.navegacion{
+    background-color: #272b2c;
+    text-align: center;
+    height: 35px;
+}
+.navegacion li{
+    display: inline-block;
+    color: white;
+    padding-right: 15px;
+    padding-top: 8px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    width: 100%;
+}
+.container-footer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    padding: 50px;
+}
+.column1 {
+    max-width: 400px;
+}
+.column1 h4 {
+    font-size: 12pt;;
+}
+.column1 ul {
+    color: #c7c7c7;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 10px;
+}
+.column2 {
+    max-width: 400px;
+}
+.column2 h4 {
+    font-size: 12pt;;
+}
+.column2 ul {
+    color: #c7c7c7;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 15px;
+}
+.column2 li{
+    margin-top: 5px;
+}
+.column3 {
+    max-width: 400px;
+}
+.column3 h4 {
+    font-size: 12pt;;
+}
+.column3 .social {
+    color: #c7c7c7;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+}
+.item i{
+    width: 50px;
+    height: 30px;
+    font-size: 40px;
+}
+.footer a{
+    text-decoration: none;
+    color: #c7c7c7;
+}
+
+
+/* INDEX */
+.img {
+    min-height: 400px;
+    text-align: center;
+    color: #fff;
+    background-image: url('../img/portada1edit.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 50pt;
+    color: #333;
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+.list {
+    text-align: center;
+    width: 100%;
+    color: #333;
+}
+.list img{
+    width: 100px;
+    height: 100px;
+}
+.list span{
+    display: block;
+    font-weight: bold;
+    color: black;
+}
+.list ul {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    padding: 50px;
+}
+.list ul li {
+    max-width: 400px;
+    height: 80px;
+}
+.list ul li a {
+    size: 1000;
+}
+.list ul li a i {
+    display: block;
+    font-size: 50px;
+    background-color: #0072bb;
+
+}
+/* Section Numero de emergencia */
+.call{
+    background-color: #333;
+    width: 100%;
+    height: 300px;
+    inline-size: auto;
+    margin: 20px 150px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+.call-sintomas{
+    color: gray;
+    font-size: 20px;
+    margin-top: 30%;
+}
+.call-llamar{
+    color: white;
+    font-size: 60px;
+}
+.call-numero p{
+    color: white;
+    font-size: 150px;
+    margin-top: 10%;
+}
+
+/* LISTADO DE ENFERMEDADES */
+/* Titulo y buscador */
+.listado_enfermedades{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.listado_enfermedades h2{
+    text-align: center;
+    color: #6A6969;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.listado_enfermedades input{
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: grey;
+    width: 1200px;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+/* Articulos de las enfermedades */
+.listado_enfermedades article{
+    display: flex;
+}
+.listado_enfermedades img{
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    float: left;
+    margin-right: 15px;
+}
+.listado_enfermedades h4{
+    margin-top: 5px;
+}
+.listado_enfermedades a{
+    color: black;
+    text-decoration: none;
+}
+
+/* DETALLES DE LA ENFERMEDAD */
+/* Seccion 1: Titulo y descripcion */
+.descripcion_enfermedad{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.descripcion_enfermedad h2{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #6A6969;
+    font-size: 30px;
+}
+.descripcion_enfermedad article{
+    display: flex;
+    letter-spacing: 0.5px;
+}
+.descripcion_enfermedad img{
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    float: left;
+    margin-right: 30px;
+}
+/* Seccion 2: Formulario de test */
+#formulario_test_titulo{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color: #6A6969;
+}
+.formulario_test{
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+}
+.formulario_test article{
+    width: 50%;
+}
+/*Sintomas*/
+.formulario_test a{
+    color: #37BBED;
+}
+.formulario_test h4{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color: #6A6969;
+}
+.formulario_test img{
+    width: 180px;
+    height: 150px;
+    margin-right: 25px;
+    margin-left: 70px;
+}
+/*Test*/
+.formulario_test label{
+    text-align: justify;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.formulario_test input{
+    border-radius: 5px;
+    border-width: 1px;
+    margin-bottom: 10px;
+}
+.formulario_test input[type=radio]{
+    margin-right: 5px;
+    margin-left: 15px;
+}
+.formulario_test input[type=submit]{
+    color: white;
+    background-color: #252524;
+    border-width: 1px;
+    padding: 2px;
+}
+/* Seccion 3: Medidas de precaucion */
+#medidas_precaucion_titulo{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #6A6969;
+    font-size: 30px;
+}
+.medidas_precaucion{
+    margin-left: 200px;
+    margin-left: 200px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+.medidas_precaucion article{
+    width: 40%;
+}
+.medidas_precaucion img{
+    width: 180px;
+    height: 150px;
+    margin-right: 50px;
+}
+/* Seccion 4: Hospitales cercanos */
+#hospital_cercano_titulo{
+    margin-bottom: 20px;
+    color: #6A6969;
+    text-align: center;
+}
+.hospital_cercano{
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+    display: flex;
+}
+.hospital_cercano h4{
+    margin-bottom: 20px;
+    color: #6A6969;
+}
+.hospital_cercano li{
+    display: block;
+    margin-bottom: 5px;
+}
+.hospital_cercano img{
+    width: 300px;
+    height: 200px;
+}
+.hospital_cercano iframe{
+    border: none;
+    width: 800px;
+    height: 330px;
+}
+.hospital_cercano article{
+    width: 50%;
+}

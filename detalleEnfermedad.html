@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"><!--Fontawesome-->
+    <link rel="icon" href="img/logo2.png">
+    <title>COVID19 - Detalles</title>
+</head>
+<body>
+    <header class="header-con-navbar">
+        <div class="center-header">
+            <div class="logo">
+                <a href="#page-top">PLUS MEDICAL</a>
+            </div>
+            <div class="search">
+                <input list="buscador" placeholder="Buscar...">
+                <datalist id="buscador">
+                    <option value="COVID-19"></option>
+                    <option value="Hepatitis"></option>
+                    <option value="Varicela"></option>
+                    <option value="Angina"></option>
+                </datalist>
+                <a href="" class="button">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navegacion">
+        <ul>
+            <a href="index.html"><li>Inicio</li></a>
+            <a href="lista.html"><li>Enfermedades</li></a>
+            <a href="vacunacion.html"><li>Vacunacion</li></a>
+            <a href="hospitalesDisponibles.html"><li>Hospitales</li></a>
+            <a href="contacto.html"><li>Contacto</li></a>
+        </ul>
+    </nav>
+    <section class="descripcion_enfermedad">
+        <h2>COVID 19 - CORONAVIRUS</h2>
+        <article>
+            <img src="img/covid19.jpg"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto modi dolor! At voluptate consequuntur sunt saepe ex magni sequi. Nisi laborum quaerat exercitationem necessitatibus reprehenderit expedita recusandae dolor cum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, officia distinctio. Quidem porro est quam quae nobis nam voluptates dignissimos perspiciatis assumenda, eum a blanditiis praesentium culpa veritatis enim exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dignissimos nemo expedita veritatis mollitia id inventore. Sequi numquam tempora consequatur! Fugiat cumque nisi aliquid omnis atque consectetur minima alias assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dicta, aliquid neque eveniet repellat quam! Sint quibusdam, minus mollitia aperiam itaque eveniet tempore, laboriosam neque dolorem assumenda maiores, recusandae aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem animi quis alias quo doloribus impedit repellendus itaque corrupti aliquid ipsum aperiam, voluptatum, quia, molestiae ab perspiciatis facere vel iste?</span>
+        </article>
+    </section>
+
+    <h3 id="formulario_test_titulo">FORMULARIO DE DETECCION (TEST) DE CORONAVIRUS (COVID-19)</h3>
+    <section class="formulario_test">
+        <article>
+            <span>Hola usuario! Si tienes sintomas de COVID-19, o has estado en contacto con una persona afectada, deberías hacer un control y seguimiento diario de tus sintomas.<br>
+            Esta aplicación te permitirá hacer un seguimiento de la evolución de los sintomas y te dará las indicaciones y consejos a seguir en cada caso. El uso de este servicio supone la aceptación de los términos y la politica de privacidad descritos en <a href="#">Ver las condiciones y politicas</a>.</span>
+
+            <h4>SINTOMAS</h4>
+            <img src="img/24-fiebre-dolor-garganta.png" alt="fiebre_dolor_garganta">
+            <img src="img/25-fiebre-dificultad-respirar.png" alt="fiebre_dificultad_respirar">
+            <img src="img/23-fiebre-tos.png" alt="fiebre_tos">
+        </article>
+        <article>
+            <form>
+                <div class="form-row">
+                    <div class="col-md-6"><label>Nombre y apellido</label><input type="text" class="form-control" required></div>
+                    <div class="col-md-6"><label>Sexo</label><br><input type="radio" name="selector_sexo" required>     M     <input type="radio" name="selector_sexo" required>     F</div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6"><label>DNI</label><input type="text" class="form-control" maxlength="10" required></div>
+                    <div class="col-md-6"><label>Teléfono</label><input type="text" class="form-control" maxlength="10" required></div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6"><label>Dirección</label><input type="text" class="form-control" required></div>
+                    <div class="col-md-6"><label>Ciudad</label><input type="text" class="form-control" required></div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6"><label>¿Has viajado al exterior de la República Argentina?</label><input type="radio" name="selector_viaje">SI<input type="radio" name="selector_viaje">NO</div>
+                    <div class="col-md-6">
+                        <label>Paises visitados:</label>
+                        <select class="form-control">
+                            <option value="0"></option>
+                            <option value="1">Uruguay</option>
+                            <option value="2">Chile</option>
+                            <option value="3">Brasil</option>
+                            <option value="4">Estados Unidos</option>
+                            <option value="5">España</option>
+                            <option value="6">Italia</option>
+                            <option value="7">China</option>
+                            <option value="8">Australia</option>
+                            <option value="9">Alemania</option>
+                        </select></div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12">
+                        <span>Por favor, indica los sintomas que presentas</span><br>
+                        <label>¿Tuviste fiebre mayor a 38 grados?</label><input type="radio" name="fiebre">SI<input type="radio" name="fiebre">NO   <br>
+                        <label>¿Tuviste dolor de cabeza?</label><input type="radio" name="dolor_cabeza">SI<input type="radio" name="dolor_cabeza">NO<br>
+                        <label>¿Tuviste una tos persistente?</label><input type="radio" name="tos">SI<input type="radio" name="tos">NO<br>
+                        <label>¿Tuviste dolor de garganta?</label><input type="radio" name="dolor_garganta">SI<input type="radio" name="dolor_garganta">NO<br>
+                        <label>¿Tuviste dificultad para respirar?</label><input type="radio" name="dificultad_respirar">SI<input type="radio" name="dificultad_respirar">NO
+                    </div>
+                </div>  
+                <div class="form-row">
+                    <input type="submit" value="ENVIAR TEST">
+                </div>            
+            </form>
+        </article>
+    </section>
+    <h3 id="medidas_precaucion_titulo">MEDIDAS DE PRECAUCION</h3>
+    <section class="medidas_precaucion">    
+        <article>
+            <img src="img/14-lavarse-manos.png" alt="lavarse-manos">
+            <img src="img/16-tocar-nariz.png" alt="tocar-nariz">
+            <img src="img/18-limpiar-objetos.png" alt="limpiar-objetos">
+            <img src="img/17-ventilar.png" alt="ventilar">
+        </article>
+        <article>
+            <img src="img/15-estornudar.png" alt="estornudar">
+            <img src="img/20-reducir-contacto.png" alt="reducir-contacto">            
+            <img src="img/19-permanecer-domicilio.png" alt="permanecer-domicilio">
+            <img src="img/21-no-compartir-mate.png" alt="no-compartir-mate">
+        </article>
+        <!-- <div class="col-row">
+            <img src="img/14-lavarse-manos.png" alt="lavarse-manos">
+            <img src="img/16-tocar-nariz.png" alt="tocar-nariz">
+            <img src="img/15-estornudar.png" alt="estornudar">
+            <img src="img/17-ventilar.png" alt="ventilar">
+        </div>
+        <div class="col-row">
+            <img src="img/18-limpiar-objetos.png" alt="limpiar-objetos">
+            <img src="img/20-reducir-contacto.png" alt="reducir-contacto">
+            <img src="img/19-permanecer-domicilio.png" alt="permanecer-domicilio">
+            <img src="img/21-no-compartir-mate.png" alt="no-compartir-mate">
+        </div> -->
+    </section>
+
+    <h3 id="hospital_cercano_titulo">HOSPITAL MAS CERCANO ESPECIALIZADO</h3>
+    <section class="hospital_cercano">
+        <article>
+            <h4>Hospital Italiano de San Justo Agustín Rocca</h5>
+            <li>4959-0200</li>
+            <li>Pres. Juan Domingo Perón 2231</li>
+            <li>San Justo, Buenos Aires</li>
+            <img src="img/hospital_frente.jpg">
+        </article>
+        <article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18560.579156831664!2d-58.57089089108219!3d-34.67798470194337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7cd14129b61%3A0x78f6eab9f8572beb!2sHospital%20Italiano%20de%20San%20Justo%20Agust%C3%ADn%20Rocca!5e0!3m2!1ses-419!2sar!4v1601772361784!5m2!1ses-419!2sar"></iframe>
+        </article>
+    </section>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="column1">
+                <h4>Datos Del Grupo</h4>
+                <ul class="list-footer">
+                    <li>Davies Maximiliano - DNI</li>
+                    <li>Vega Dobal Agustin - DNI</li>
+                    <li>Bonasera Tomas - DNI</li>
+                </ul>
+            </div>
+            <div class="column2">
+                <h4>Menú inferior</h4>
+                <ul class="list-footer">
+                    <li><a href="lista.html">Enfermedades</a></li>
+                    <li><a href="vacunas.html">Vacunas</a></li>
+                    <li><a href="hospitalesDisponibles.html">Mapa Hospitales</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="column3">
+                <h4>Redes Sociales</h4>
+                <div class="social">
+                    <div class="item">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
