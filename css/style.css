@@ -400,3 +400,81 @@ a{
 .hospital_cercano article{
     width: 50%;
 }
+
+/* HOSPITALES DISPONIBLES */
+.hospitales_disponibles{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.hospitales_disponibles h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #6A6969;
+}
+.hospitales_disponibles iframe{
+    display: block;
+    width: 1300px;
+    height: 700px;
+    border: none;
+    margin-bottom: 50px;
+}
+
+/* CONTACTO */
+.contacto{
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.contacto_paciente{
+    margin-right: 250px;
+}
+.titulo_contacto{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #6A6969;
+}
+.contacto input{
+    border-radius: 5px;
+    border-width: 1px;
+    display: block;
+    margin-bottom: 20px;
+    width: 500px;
+}
+.contacto textarea{
+    width: 500px;
+    max-width: 500px;
+    max-height: 200px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#boton_enviar{
+    color: white;
+    background-color: #383837;
+    width: 100px;
+}
+.contacto_clinica a{
+    display: block;
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+.contacto_clinica i{
+    font-size: 40px;
+}
+.ubicacion_paciente h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #6A6969;
+}
+.ubicacion_paciente iframe{
+    width: 1000px;
+    height: 500px;
+    border: none;
+    margin-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

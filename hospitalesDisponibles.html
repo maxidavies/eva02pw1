@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"><!--FONTAWESOME-->
+    <link rel="stylesheet" href="css/style.css"><!--ESTILOS PROPIOS-->
+    <link rel="icon" href="img/logo2.png">
+    <title>Hospitales disponibles</title>
 </head>
 <body>
-    
+    <header class="header-con-navbar">
+        <div class="center-header">
+            <div class="logo">
+                <a href="#page-top">PLUS MEDICAL</a>
+            </div>
+            <div class="search">
+                <input list="buscador" placeholder="Buscar...">
+                <datalist id="buscador">
+                    <option value="COVID-19"></option>
+                    <option value="Hepatitis"></option>
+                    <option value="Varicela"></option>
+                    <option value="Angina"></option>
+                </datalist>
+                <a href="" class="button">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navegacion">
+        <ul>
+            <a href="index.html"><li>Inicio</li></a>
+            <a href="lista.html"><li>Enfermedades</li></a>
+            <a href="vacunacion.html"><li>Vacunacion</li></a>
+            <a href="hospitalesDisponibles.html"><li>Hospitales</li></a>
+            <a href="contacto.html"><li>Contacto</li></a>
+        </ul>
+    </nav>
+    <section class="hospitales_disponibles">
+        <h2>MAPA DE HOSPITALES DISPONIBLES</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d44171.24398210196!2d-58.58294449787501!3d-34.62824366911109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospital!5e0!3m2!1ses-419!2sar!4v1601648906013!5m2!1ses-419!2sar"></iframe>
+    </section>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="column1">
+                <h4>Datos Del Grupo</h4>
+                <ul class="list-footer">
+                    <li>Davies Maximiliano - 43309952</li>
+                    <li>Vega Dobal Agustin - 42838444</li>
+                    <li>Bonasera Tomas - 42720104</li>
+                </ul>
+            </div>
+            <div class="column2">
+                <h4>Menú inferior</h4>
+                <ul class="list-footer">
+                    <li><a href="lista.html">Enfermedades</a></li>
+                    <li><a href="vacunas.html">Vacunas</a></li>
+                    <li><a href="hospitalesDisponibles.html">Mapa Hospitales</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="column3">
+                <h4>Redes Sociales</h4>
+                <div class="social">
+                    <div class="item">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
