@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"><!--FONTAWESOME-->
     <link rel="stylesheet" href="css/style.css"><!--ESTILOS PROPIOS-->
-    <link rel="icon" href="img/logo2.png">
+    <link rel="stylesheet" href="css/mediaQueries360.css">
+    <link rel="stylesheet" href="css/mediaQueries415.css">
     <title>Contacto</title>
 </head>
 <body>
@@ -41,11 +42,18 @@
     <section class="contacto">
         <article class="contacto_paciente">
             <h2 class="titulo_contacto">CONTACTO</h2>
-            <form>
-                <input type="text" placeholder="Nombre y apellido..." required>
-                <input type="email" placeholder="Correo electrónico..." required>
-                <input type="text" placeholder="Número de telefono..." maxlength="10">
-                <textarea placeholder="Ingrese su consulta..." required></textarea>
+            <form action="#" id="formularioContacto" name="formularioContacto" onsubmit="return validarFormularioContacto()">
+                <input type="text" placeholder="Nombre y apellido..." id="nombreApellido" name="nombreApellido" required>
+                <p class="error" id="errorNomAp">Ingrese su nombre y apelldio</p>
+
+                <input type="text" placeholder="Correo electrónico..." id="correoElectronico" name="correoElectronico">
+                <p class="error" id="errorCorreo">El formato debe ser: ejemplo@ejemplo.com</p>
+
+                <input type="text" placeholder="Número de telefono..." id="numeroTelefono" maxlength="9" name="numeroTelefono">
+                <p class="error" id="errorTel">El formato debe ser: 0000-0000</p>
+
+                <textarea placeholder="Ingrese su consulta..." id="areaConsulta" onkeyup="contadorCaracteres()" maxlength="1000"  required></textarea>
+                <p id="caracteresRestantes"></p>
                 <input type="submit" value="ENVIAR" id="boton_enviar">
             </form>
         </article>
@@ -72,9 +80,9 @@
             <div class="column1">
                 <h4>Datos Del Grupo</h4>
                 <ul class="list-footer">
-                    <li>Davies Maximiliano - 43309952</li>
-                    <li>Vega Dobal Agustin - 42838444</li>
-                    <li>Bonasera Tomas - 42720104</li>
+                    <li>Davies Maximiliano - DNI</li>
+                    <li>Vega Dobal Agustin - DNI</li>
+                    <li>Bonasera Tomas - DNI</li>
                 </ul>
             </div>
             <div class="column2">
@@ -102,5 +110,6 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="scripts/validaciones.js"></script>
 </body>
 </html>
