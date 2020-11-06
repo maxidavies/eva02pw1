@@ -4,6 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 body {
     background-color: #ffffff;
     margin: 0px;
@@ -25,7 +26,6 @@ a{
     position: fixed;
     margin-bottom: 10px;
     border-bottom: #ffffff 2px solid;
-    width: 100%;
 }
 .header-con-navbar{
     background-color: #37BBED;
@@ -273,6 +273,7 @@ a{
 .descripcion_enfermedad{
     margin-left: 200px;
     margin-right: 200px;
+    text-align: justify;
 }
 .descripcion_enfermedad h2{
     text-align: center;
@@ -325,26 +326,67 @@ a{
     margin-left: 70px;
 }
 /*Test*/
+.col-md-12 span{
+    margin-left:60px ;
+}
 .formulario_test label{
     text-align: justify;
-    margin-right: 20px;
+    margin-right: 10px;
     vertical-align: middle;
+    margin-left: 60px;
+
 }
 .formulario_test input{
     border-radius: 5px;
     border-width: 1px;
     margin-bottom: 10px;
+    margin-left: 60px;
 }
 .formulario_test input[type=radio]{
     margin-right: 5px;
-    margin-left: 15px;
+    margin-left: 60px;
 }
+ #tempe{
+margin-left: 30px; }
+
+ #dolor-cabeza{
+margin-left: 93px; }
+
+#sintomas-no, #dificultad-respirarNo{
+    margin-left: 32px;
+}
+#tos{
+    margin-left: 72px;
+}
+#dolor-garganta{
+    margin-left: 82px;
+}
+#dificultad-respirar{
+    margin-left: 50px;
+}
+
+
 .formulario_test input[type=submit]{
     color: white;
     background-color: #252524;
     border-width: 1px;
     padding: 2px;
+    
 }
+
+.desaparece{
+    display: none;
+}
+.desapareceDirec{
+    display: none;
+}
+
+.error{
+    color: red;
+    text-align: right;
+    font-size: 25px;
+}
+
 /* Seccion 3: Medidas de precaucion */
 #medidas_precaucion_titulo{
     text-align: center;
@@ -354,8 +396,8 @@ a{
     font-size: 30px;
 }
 .medidas_precaucion{
-    margin-left: 200px;
-    margin-left: 200px;
+    margin-left: 175px;
+    margin-left: 175px;
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
@@ -366,7 +408,7 @@ a{
 .medidas_precaucion img{
     width: 180px;
     height: 150px;
-    margin-right: 50px;
+    margin-right: 40px;
 }
 /* Seccion 4: Hospitales cercanos */
 #hospital_cercano_titulo{
@@ -394,8 +436,9 @@ a{
 }
 .hospital_cercano iframe{
     border: none;
-    width: 800px;
+    width: 600px;
     height: 330px;
+    justify-content: right;
 }
 .hospital_cercano article{
     width: 50%;
@@ -444,7 +487,6 @@ a{
 }
 .contacto textarea{
     width: 500px;
-    height: 100px;
     max-width: 500px;
     max-height: 200px;
     margin-bottom: 20px;
@@ -478,16 +520,4 @@ a{
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-.error{
-    display: none;
-    color: #f14545;
-    font-size: 15px;
-    padding: 0px;
-    margin-top: -20px;
-}
-#caracteresRestantes{
-    font-size: 15px;
-    padding: 0px;
-    margin-top: -20px;
 }
